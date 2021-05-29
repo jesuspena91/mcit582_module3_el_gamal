@@ -32,5 +32,3 @@ def decrypt(sk,c):
 
     m = 0
     return m
-
-decrypt()
