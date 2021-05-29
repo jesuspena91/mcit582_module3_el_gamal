@@ -23,7 +23,7 @@ def encrypt(pk,m):
     r = random.randint(1,q)
 
     c1 = pow(g, r, p)
-    c2 = pow(pk, r) * pow(m, 1, p)
+    c2 = (pow(pk, r, p) * (m % p)) % p
     return [c1,c2]
 
 def decrypt(sk,c):
