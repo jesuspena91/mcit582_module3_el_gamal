@@ -27,7 +27,10 @@ def encrypt(pk,m):
     return [c1,c2]
 
 def decrypt(sk,c):
+
+    print(c)
+
     m = 0
     return m
 
-keygen()
+decrypt()
