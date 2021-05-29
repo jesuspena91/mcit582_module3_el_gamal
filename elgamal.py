@@ -9,12 +9,13 @@ from params import g
 # distributed in the range   0,…,q−1 .
 
 def keygen():
-    q = (p−1)/2
+    q = (p - 1)/2
     a = random.randint(1,q)
     h = pow(g, a, p)
 
     sk = a
     pk = h
+    print(sk)
     return pk,sk
 
 def encrypt(pk,m):
@@ -25,3 +26,5 @@ def encrypt(pk,m):
 def decrypt(sk,c):
     m = 0
     return m
+
+keygen()
