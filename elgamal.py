@@ -28,7 +28,7 @@ def encrypt(pk,m):
 
 def decrypt(sk,c):
 
-    print(c.c1)
+    print(c[0])
 
     m = 0
     return m
